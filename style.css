@@ -1,0 +1,664 @@
+/* Reset and common styles */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style-type:none;
+    font-family: "Bellota Text",cursive;
+    font-weight: 400;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    overflow-x: hidden;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-heading{
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: 0.3rem solid #333;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+/* end of  Reset and common styles */
+/*section-1*/
+
+/* end of common style*/
+/* Section 1 */
+.section-1 {
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .floating-bg {
+    width: 150vw;
+    height: 150vw;
+    background-color:#369deb;
+    position: absolute;
+    top: -125vw;
+    left: calc(50% - 75vw);
+    border-radius: 45%;
+    animation: rotate 30s infinite;
+  }
+  
+  .floating-bg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:  #1761EB;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 40%;
+    animation: rotate 30s infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .navbar {
+    position: relative;
+    z-index: 20;
+    top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbar-link {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    width: 1.5rem;
+    word-wrap: break-word;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  .navbar-link:hover {
+    width: 15rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 2.5s;
+  }
+  
+  .section-1-heading {
+    font-size: 6rem;
+    font-family: "Monoton", cursive;
+    position: absolute;
+    top: 16vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0.3rem 0.3rem 0.3rem #888;
+    color: #fff;
+    background-color: #fff;
+    width: 85rem;
+    text-align: center;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.8rem;
+    opacity: 0.9;
+    letter-spacing: 0.1rem;
+  }
+
+  .section-0{
+    margin-top: 0;
+    height: 60vh;
+    width: 100%;
+    bottom: 0;
+    background-color: #333;
+    position: relative;
+   
+  }
+  .svgclass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.svgclass svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.svgclass .shape-fill {
+    fill: #FFFFFF;
+}
+ 
+  
+  
+  .ans{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.7rem dotted #1761EB;
+    
+    padding: 0.5rem;
+    opacity: 0.9;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+    
+   
+  }
+ 
+  .person-name{
+    font-size: 5rem;
+    color: #fff;
+    
+    margin: 5rem 0;
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.3rem;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+   
+   
+    
+   
+    
+}
+.ansula{
+    color:#1761EB ;
+}
+.section-1-btn{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1761EB;
+    border:0.3rem solid #fff;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    
+   
+    
+
+}
+/* End of navbar*/
+/* section2*/
+.section-2{
+    width: 100%;
+    height: 100%;
+    padding: 15rem 0 10rem 0;
+    background-color: #FFf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.progress-bars-wrapper{
+    margin-bottom: 10rem;
+}
+.progress-bar{
+    width: 60rem;
+    height: 3rem;
+    background-color: #333;
+    margin: 1.5rem 0;
+    border-radius: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 1rem #555;
+    position: relative;
+}
+.progress-text{
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+.progress-text span{
+    margin: 0 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.progress-percent{
+    width: 0;
+    height: 100%;
+    background-color: #1761EB;
+    border-radius: 0.3rem;
+    transition: width 0.5s 0.5s ease-in-out;
+}
+.services{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service{
+    text-align: center;
+}
+.service:first-child,
+.service:last-child{
+    align-self: flex-start;
+}
+.service i{
+    font-size: 10rem;
+    color: #1761EB;
+    margin-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+.service h2{
+    font-size: 2rem;
+    color: #fff;
+    background-color: #333;
+    width: 25rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-10deg);
+    box-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+.aboutsvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.aboutsvg svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 55px;
+}
+
+.aboutsvg .shape-fill {
+    fill:#333;
+}
+
+/* end of section2 */
+/* section3 */
+.section-3{
+    width: 100%;
+    height: 100%;
+    padding:10rem 0;
+    background-color: #eef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.projects-wrapper{
+    width: 80%;
+    flex-wrap: wrap;
+
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: .3rem .3rem .5rem #777;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+.project:hover{
+    box-shadow: 1rem 1rem 1rem #777;
+}
+.project-text{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    z-index: 10;
+    top: -10rem;
+    transition: top 0.3s;
+}
+.project:hover .project-text{
+    top: 5rem;
+    transition: top 0.3s 0.3s;
+}
+.project-name{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+.project-technologies{
+    font-size: 1.8rem;
+    color: #083280;
+}
+.project-img{
+    width: 40rem;
+    transition: opacity 0.3s;
+}
+.project:hover .project-img{
+    opacity: 0.2;
+}
+.project-link{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.1rem;
+    border: 0.3rem solid #1761EB;
+    padding: 0.1rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5rem;
+    transition: bottom 0.3s;
+}
+.project:hover .project-link{
+    bottom: 5rem;
+    transition: bottom 0.3s 0.3s;
+}
+.projectsvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.projectsvg svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 55px;
+}
+
+.projectsvg .shape-fill {
+    fill:#fff;
+}
+
+/* end of section3 */
+/* section4*/
+.section-4{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+.section-4-heading{
+    color: #fff;
+    box-shadow: none;
+    border-color: #fff;
+    margin-bottom: 5rem;
+}
+.contact-form{
+    width: 50rem;
+    flex-direction: column;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #eef;
+    font-size: 1.5rem;
+    border: 0.2rem solid #1761EB;
+    color: #555;
+    border-radius: 2rem;
+}
+.contact-form textarea{
+    height: 10rem;
+    max-width: 100%;
+    max-height: 15rem;
+    border-radius: 0.5rem;
+}
+.contact-form .contact-form-btn{
+    background-color: #1761EB;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+}
+.sericesvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.sericesvg svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 55px;
+}
+
+.sericesvg .shape-fill {
+    fill: #eef;
+}
+/* end of section4 */
+/* section5*/
+.section-5{
+    width: 100%;
+    height: 30vh;
+    background-color: #222;
+    flex-direction: column;
+    position: relative;
+}
+.social-media{
+    margin-bottom: 5rem;
+
+}
+.social-media-link{
+    margin: 0.2rem;
+    padding: 0.7rem;
+    background-color: #1761EB;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+.social-media-link i{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.copyright{
+    color: #aaa;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    font-weight:  300;
+    text-align: center;
+    
+}
+.copysvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.copysvg svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 169px;
+}
+
+.copysvg .shape-fill {
+    fill: #333;
+}
+
+/* end of section5 */
+
+/* Resposive */
+/* @media(max-width:1150px){
+    .floating-bg{
+      top: -110vw;
+    }
+    .section-1-heading{
+      font-size: 3rem;
+      top: 30vw;
+      width: 60rem;
+    }
+    .ans{
+        width: 20rem;
+        height: 20rem;
+    }
+   
+   
+    
+  } */
+  
+@media(max-width:1200px){
+    .services{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .service{
+        margin: 3rem 2rem;
+    }
+    .section-4{
+        height: 80vh;
+    }
+    .floating-bg{
+        top: -110vw;
+      }
+      .section-1-heading{
+        font-size: 3rem;
+        top: 30vw;
+        width: 60rem;
+      }
+      .ans{
+          width: 20rem;
+          height: 20rem;
+      }
+     
+      .navbar-link{
+          font-size: 2rem;
+      }
+}
+@media(max-width:100px){
+    .person-name{
+        font-size: 3rem;
+        top: 40%;
+    }
+    .section-1-btn{
+        font-size: 1rem;
+        top: 90%;
+    }
+ 
+}
+
+@media(max-width:800px){
+    .section-1-heading{
+        font-size: 2rem;
+    }
+    .navbar-link{
+        font-size: 1.5rem;
+    }
+    .progress-bar{
+        width: 50rem;
+    }
+    .person-name{
+        font-size: 2rem;
+    }
+   
+}
+@media(max-width:600px){
+    .section-1-heading{
+        font-size: 2rem;
+    }
+    .navbar-link{
+        font-size: 1.3rem;
+        letter-spacing: 0;
+    }
+    .section-2{
+        padding: 10rem;
+    }
+    .section-2-heading{
+        margin-bottom: 10rem;
+    }
+    .progress-bar{
+        width: 45rem;
+    }
+    .project-img{
+        width: 100%;
+    }
+    .contact-form{
+        width: 40rem;
+    }
+    .copyright{
+        width: 70%;
+    }
+  
+}
+@media(max-width:500px){
+   html{
+       font-size: 55%;
+   }
+
+}
+@media(max-width:400px){
+    html{
+        font-size: 45%;
+    }
+    .section-1-heading{
+        font-size:2rem ;
+    }
+    .navbar-link{
+        margin: 0 1rem;
+    }
+    .section-2-heading{
+        text-align:center;
+    }
+    .progress-bar{
+        width: 40rem;
+    }
+   
+
+}
+@media(max-width:300px){
+    html{
+        font-size: 30%;
+    }
+
+ .section-1-heading{
+    font-size:1.5rem ;
+}
+.navbar-link{
+    font-size: 0.9rem;
+}
+ }
+/* end of Resposive */
