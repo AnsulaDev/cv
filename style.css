@@ -569,17 +569,43 @@ html{
           font-size: 2rem;
       }
 }
-@media(max-width:100px){
+@media(max-width:1150px){
+    .floating-bg{
+      top: -110vw;
+    }
+    .section-1-heading{
+      font-size: 5rem;
+      top: 30vw;
+      width: 60rem;
+    }
+   
+   
+    
+  }
+  @media(max-width:950px){
+    .floating-bg{
+      top: -100vw;
+    }
+    .section-1-heading{
+      
+      top: 40vw;
+      
+    }
+    .navbar{
+      justify-content: space-around;
+    }
+    .ans{
+        width: 20rem;
+        height: 20rem;
+    }
     .person-name{
         font-size: 3rem;
-        top: 40%;
     }
     .section-1-btn{
         font-size: 1rem;
-        top: 90%;
     }
- 
-}
+    
+  }
 
 @media(max-width:800px){
     .section-1-heading{
@@ -591,10 +617,7 @@ html{
     .progress-bar{
         width: 50rem;
     }
-    .person-name{
-        font-size: 2rem;
-    }
-   
+    
 }
 @media(max-width:600px){
     .section-1-heading{
@@ -621,6 +644,16 @@ html{
     }
     .copyright{
         width: 70%;
+    }
+    .ans{
+        width: 18rem;
+        height: 18rem;
+    }
+    .person-name{
+        font-size: 1.5rem;
+    }
+    .section-1-btn{
+        font-size: 0.9rem;
     }
   
 }
